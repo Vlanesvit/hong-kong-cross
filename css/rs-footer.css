@@ -1,0 +1,182 @@
+@charset "UTF-8";
+.rs-footer {
+  padding: 0px 23px 23px;
+}
+@media (max-width: 1169.98px) {
+  .rs-footer {
+    padding: 0px 16px 16px;
+  }
+}
+.rs-footer__container {
+  max-width: 1920px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.rs-footer__wrapper {
+  position: relative;
+}
+.rs-footer__blocks {
+  min-height: 246px;
+  background-color: #00483c;
+  color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 34px 94px 43px 49px;
+}
+@media (max-width: 1439.98px) {
+  .rs-footer__blocks {
+    padding: 20px 90px 20px 20px;
+  }
+}
+@media (min-width: 1169.98px) {
+  .rs-footer__blocks {
+    -webkit-mask-image: url("../img/footer/footer-mask-1.png");
+            mask-image: url("../img/footer/footer-mask-1.png");
+    -webkit-mask-size: cover;
+            mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: right;
+            mask-position: right;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-footer__blocks {
+    padding: 20px;
+  }
+}
+.rs-footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 1439.98px) {
+  .rs-footer__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.rs-footer__block:not(:last-child) {
+  padding-bottom: 39px;
+  margin-bottom: 42px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.2);
+}
+@media (max-width: 1169.98px) {
+  .rs-footer__block:not(:last-child) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-footer__block:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .rs-footer__block:last-child .rs-footer__menu {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+.rs-footer__logo {
+  max-width: 300px;
+}
+@media (max-width: 1169.98px) {
+  .rs-footer__logo {
+    max-width: 200px;
+  }
+}
+.rs-footer__logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.rs-footer__logo a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.rs-footer__menu {
+  margin-left: 30px;
+}
+@media (max-width: 1439.98px) {
+  .rs-footer__menu {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1169.98px) {
+  .rs-footer__menu .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.rs-footer__menu .menu__list li {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.rs-footer__menu .menu__list li:not(:last-child) {
+  margin-right: 37px;
+}
+@media (max-width: 1439.98px) {
+  .rs-footer__menu .menu__list li:not(:last-child) {
+    margin-right: 15px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-footer__menu .menu__list li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+}
+.rs-footer__menu .menu__list li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  white-space: nowrap;
+}
+@media (any-hover: hover) {
+  .rs-footer__menu .menu__list li a:hover {
+    color: #04c790;
+  }
+}
+.rs-footer__copyright {
+  font-weight: 400;
+  font-size: 13px;
+}
+.rs-footer__scroll {
+  position: absolute; /* Абсолютное позиционирование кнопки относительно родительского блока */
+  top: 0; /* Позиционирование кнопки по вертикали на середину родительского блока */
+  right: 0; /* Прижатие кнопки к левому краю родительского блока */
+  -webkit-transform: rotate(-90deg) translateX(23%);
+      -ms-transform: rotate(-90deg) translateX(23%);
+          transform: rotate(-90deg) translateX(23%); /* Поворот кнопки на 90 градусов и сдвиг её для коррекции положения */
+  -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+          transform-origin: right bottom; /* Точка преобразования - левый верхний угол кнопки */
+}
+@media (max-width: 1169.98px) {
+  .rs-footer__scroll {
+    display: none;
+  }
+}
+.rs-footer__scroll .rs-btn__icon svg {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}

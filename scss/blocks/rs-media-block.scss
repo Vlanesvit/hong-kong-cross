@@ -1,0 +1,272 @@
+.rs-media-block {
+	// .rs-media-block__container
+	&__container {
+	}
+
+	// .rs-media-block__tabs
+	&__tabs {
+		// .rs-media-block__tabs_navigation
+		&_navigation {
+			margin-top: 22px;
+			gap: 11px;
+			display: flex;
+			flex-wrap: wrap;
+
+			@media (max-width: 1439.98px) {
+				gap: 10px;
+				margin-top: 16px;
+			}
+
+			@media (max-width: 767.98px) {
+				width: 100%;
+				display: flex;
+				flex-wrap: nowrap;
+				padding: 20px 0px 10px;
+				margin: -10px 0px;
+				overflow-y: hidden;
+				overflow-x: auto;
+
+				&::-webkit-scrollbar {
+					width: 3px;
+					height: 3px;
+				}
+			}
+		}
+
+		// .rs-media-block__tabs_title
+		&_title {
+			background-color: #f5f5f5;
+			text-align: left;
+			border-radius: 54px;
+			font-weight: 500;
+			font-size: 16px;
+			// line-height: 26px;
+			line-height: 165%;
+			color: #000;
+			padding: 5px 19px;
+			transition: all 0.3s ease 0s;
+
+			@media (max-width: 1439.98px) {
+				font-size: 14px;
+			}
+			@media (max-width: 767.98px) {
+				white-space: nowrap;
+				flex: 1 1 auto;
+			}
+
+			&._tab-active {
+				background-color: var(--primary-color);
+			}
+		}
+	}
+
+	// .rs-media-block__wrapper
+	&__wrapper {
+		@media (min-width: 767.98px) {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			gap: 24px;
+		}
+
+		@media (max-width: 767.98px) {
+			& > *:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	// .rs-media-block__title
+	&__title {
+		@media (min-width: 767.98px) {
+			grid-column: 5 span;
+
+			@media (max-width: 1439.98px) {
+				grid-column: 6 span;
+			}
+		}
+
+		p {
+			margin-top: 8px;
+		}
+
+		ul {
+			margin-top: 8px;
+
+			li {
+				font-weight: 400;
+				font-size: 18px;
+				// line-height: 30px;
+				line-height: 165%;
+				display: flex;
+
+				&::before {
+					content: "•";
+					margin-top: 6px;
+					font-size: 1em;
+					padding: 0px 8px;
+					line-height: 1;
+					color: #000;
+				}
+
+				@media (max-width: 1439.98px) {
+					font-size: 16px;
+				}
+
+				@media (max-width: 1169.98px) {
+					font-size: 14px;
+				}
+
+				@media (max-width: 991.98px) {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+
+	// .rs-media-block__content
+	&__content {
+		@media (min-width: 767.98px) {
+			grid-column: 7 span;
+
+			@media (max-width: 1439.98px) {
+				grid-column: 6 span;
+			}
+		}
+
+		@media (min-width: 1439.98px) {
+			width: calc(100% - 40px);
+		}
+
+		&_body {
+			border-radius: 40px;
+			overflow: hidden;
+			padding: 40px;
+			background-color: var(--primary-color);
+
+			@media (max-width: 1439.98px) {
+				padding: 20px;
+				border-radius: 20px;
+			}
+		}
+	}
+
+	// .rs-media-block__slider
+	&__slider {
+	}
+
+	// .rs-media-block__swiper
+	&__swiper {
+	}
+
+	// .rs-media-block__slide
+	&__slide {
+		&.swiper-slide-active {
+			.rs-media-block__desc {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+			}
+
+			.rs-media-block__img {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+			}
+		}
+
+		.rs-media-block__desc {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(10px);
+			transition: all 0.3s ease 0.3s;
+		}
+
+		.rs-media-block__img {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(10px);
+			transition: all 0.3s ease 0.5s;
+		}
+	}
+
+	// .rs-media-block__item
+	&__item {
+	}
+
+	// .rs-media-block__desc
+	&__desc {
+		p {
+			margin-top: 8px;
+			margin-bottom: 22px;
+		}
+
+		ul {
+			margin-top: 8px;
+
+			li {
+				font-weight: 400;
+				font-size: 18px;
+				// line-height: 30px;
+				line-height: 165%;
+				display: flex;
+
+				&::before {
+					content: "•";
+					margin-top: 6px;
+					font-size: 1em;
+					padding: 0px 8px;
+					line-height: 1;
+					color: #000;
+				}
+
+				@media (max-width: 1439.98px) {
+					font-size: 16px;
+				}
+
+				@media (max-width: 1169.98px) {
+					font-size: 14px;
+				}
+
+				@media (max-width: 991.98px) {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+
+	// .rs-media-block__img
+	&__img {
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+		overflow: hidden;
+		background-color: #fff;
+
+		@media (max-width: 767.98px) {
+			border-radius: 15px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .rs-media-block__navigation
+	&__navigation {
+		margin-top: 22px;
+		justify-content: flex-end;
+
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+
+		.swiper-button-next,
+		.swiper-button-prev {
+			&:not(:hover) {
+				background-color: #fff;
+			}
+		}
+	}
+}

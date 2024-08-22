@@ -1,0 +1,55 @@
+.rs-logo {
+	// .rs-logo__marquee
+	&__marquee {
+		&[data-direction="left"] {
+			ul {
+				li {
+					&:not(:first-child) {
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+
+		&[data-direction="right"] {
+			ul {
+				li {
+					&:not(:last-child) {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+
+		ul {
+			display: flex;
+			align-items: center;
+
+			li {
+				font-weight: 500;
+				font-size: 150px;
+				// line-height: 167px;
+				line-height: 111%;
+				white-space: nowrap;
+				color: white;
+				text-shadow:
+					1px 1px 0 rgba($color: #000, $alpha: 0.2),
+					-1px -1px 0 rgba($color: #000, $alpha: 0.2),
+					1px -1px 0 rgba($color: #000, $alpha: 0.2),
+					-1px 1px 0 rgba($color: #000, $alpha: 0.2);
+
+				@media (max-width: 1439.98px) {
+					font-size: 80px;
+				}
+
+				@media (max-width: 1169.98px) {
+					font-size: 60px;
+				}
+
+				@media (max-width: 991.98px) {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}

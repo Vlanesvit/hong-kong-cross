@@ -1,0 +1,280 @@
+section {
+	position: relative;
+	margin: 150px 0px;
+
+	@media (max-width: 1439.98px) {
+		margin: 120px 0px;
+	}
+
+	@media (max-width: 1169.98px) {
+		margin: 80px 0px;
+	}
+
+	@media (max-width: 991.98px) {
+		margin: 50px 0px;
+	}
+}
+
+// Text ========================================================================================================================================================
+h1 {
+	font-weight: 500;
+	font-size: 55px;
+	// line-height: 61px;
+	line-height: 111%;
+
+	@media (max-width: 1439.98px) {
+		font-size: 45px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 35px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 25px;
+	}
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 40px;
+	// line-height: 44px;
+	line-height: 111%;
+
+	@media (max-width: 1439.98px) {
+		font-size: 35px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 30px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 25px;
+	}
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 28px;
+	// line-height: 34px;
+	line-height: 123%;
+	color: #000;
+
+	@media (max-width: 1439.98px) {
+		font-size: 24px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 20px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 18px;
+	}
+}
+
+h4 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 135%;
+
+	@media (max-width: 1439.98px) {
+		font-size: 20px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 16px;
+	}
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	// line-height: 30px;
+	line-height: 165%;
+
+	@media (max-width: 1439.98px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 14px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 13px;
+	}
+}
+
+// Button ========================================================================================================================================================
+.rs-btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	z-index: 10;
+
+	@media (any-hover: hover) {
+		&:hover {
+			.rs-btn__icon {
+				transform: translateX(0.75rem);
+			}
+		}
+	}
+
+	// .rs-btn__filter
+	&__filter {
+		position: absolute;
+		display: none;
+	}
+
+	// .rs-btn__block
+	&__block {
+		position: relative;
+		display: inline-flex;
+		z-index: 10;
+		filter: url(#buttonFilter);
+	}
+
+	// .rs-btn__text
+	&__text {
+		padding: 5px 19px;
+		font-weight: 500;
+		font-size: 16px;
+		// line-height: 26px;
+		line-height: 165%;
+		color: #000;
+		background-color: var(--primary-color);
+		border-radius: 54px;
+	}
+
+	// .rs-btn__icon
+	&__icon {
+		background-color: var(--primary-color);
+		transition-property: transform;
+		transition-timing-function: cubic-bezier(0.135, 0.9, 0.15, 1);
+		transition-duration: 0.9s;
+		overflow: hidden;
+		width: 36px;
+		height: 36px;
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+
+		svg {
+			transition-property: transform;
+			transition-timing-function: cubic-bezier(0.135, 0.9, 0.15, 1);
+			transition-duration: 0.9s;
+		}
+	}
+}
+
+.form {
+	width: 100%;
+
+	// .form__wrapper
+	&__wrapper {
+		position: relative;
+	}
+
+	// .form__block
+	&__block {
+	}
+
+	// .form__line
+	&__line {
+		width: 100%;
+		position: relative;
+		margin-bottom: 10px;
+	}
+
+	&__footer {
+	}
+
+	&__agreement {
+		font-weight: 400;
+		font-size: 13px;
+		// line-height: 21px;
+		line-height: 165%;
+		text-align: center;
+		margin-top: 25px;
+	}
+
+	// .form__button
+	&__button {
+		margin-top: 8px;
+		width: 100%;
+
+		.rs-btn {
+			width: 100%;
+
+			&__block {
+				width: 100%;
+			}
+
+			&__text {
+				padding: 19px 32px;
+				width: 100%;
+
+				@media (max-width: 1439.98px) {
+					padding: 14px 20px;
+				}
+			}
+		}
+	}
+}
+
+.rs-input {
+	outline: none;
+	width: 100%;
+	transition: 0.3s ease 0s;
+	transition-property: background-color, border-color;
+	padding: 17px 26px;
+	font-weight: 400;
+	font-size: 18px;
+	// line-height: 30px;
+	line-height: 165%;
+	background: #fff;
+	border-radius: 50px;
+
+	@media (max-width: 1439.98px) {
+		font-size: 16px;
+		padding: 12px 20px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 14px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 13px;
+	}
+
+	&::placeholder {
+		color: #000;
+	}
+}
+
+// Block  ========================================================================================================================================================
+.bg-elem {
+	position: absolute;
+	display: block;
+	z-index: -1;
+
+	img {
+		max-width: unset;
+	}
+}
+.bg-elem-left-top {
+	top: -30px;
+	left: auto;
+	right: calc(100% - 120px);
+}
