@@ -5,13 +5,11 @@
 // Инициализация слайдеров
 function initSliders() {
 	// Перечень слайдеров
-	// Перечень слайдов
-	if (document.querySelector('.rs-picture-block__slider')) {
+	if (document.querySelector('.rs-picture-block')) {
 		const sliderBlocks = document.querySelectorAll('.rs-picture-block');
 		sliderBlocks.forEach(sliderBlock => {
 			const sliderImg = sliderBlock.querySelector('.rs-picture-block__mask_slider');
 			const sliderContent = sliderBlock.querySelector('.rs-picture-block__desc_slider');
-
 			const pagination = sliderBlock.querySelector('.rs-picture-block__pagination');
 			const arrowNext = sliderBlock.querySelector('.rs-picture-block__button-next');
 			const arrowPrev = sliderBlock.querySelector('.rs-picture-block__button-prev');
@@ -320,6 +318,8 @@ function initSliders() {
 
 				// Скорость смены слайдов
 				speed: 500,
+
+				autoHeight: true,
 
 				// Включение/отключение
 				// перетаскивание на ПК

@@ -1,6 +1,6 @@
 .rs-banner {
 	margin-top: 0px;
-	height: 100vh;
+	height: calc(100vh - env(safe-area-inset-bottom));
 	max-height: 919px;
 
 	// .rs-banner__bg

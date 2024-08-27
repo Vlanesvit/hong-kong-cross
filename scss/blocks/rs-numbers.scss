@@ -42,6 +42,7 @@
 		animation-duration: calc(1s * 0.8);
 		transition: all 0.3s ease 0s;
 		visibility: hidden;
+		opacity: 0;
 
 		$i: 1;
 		@while $i < 30 {
@@ -53,18 +54,20 @@
 
 		&.aos-animate {
 			animation-name: rollIn;
-			visibility: visible;
+			animation-fill-mode: both;
 		}
 
 		@keyframes rollIn {
 			0% {
 				opacity: 0;
+				visibility: hidden;
 				-webkit-transform: translate3d(-100%, 0, 0) rotate(-120deg);
 				transform: translate3d(-100%, 0, 0) rotate(-120deg);
 			}
 
 			100% {
 				opacity: 1;
+				visibility: visible;
 				-webkit-transform: translateZ(0);
 				transform: translateZ(0);
 			}

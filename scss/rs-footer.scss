@@ -29,13 +29,6 @@
 			padding: 20px 90px 20px 20px;
 		}
 
-		@media (min-width: 1169.98px) {
-			mask-image: url("../img/footer/footer-mask-1.png");
-			mask-size: cover;
-			mask-repeat: no-repeat;
-			mask-position: right;
-		}
-
 		@media (max-width: 1169.98px) {
 			padding: 20px;
 		}
@@ -157,14 +150,40 @@
 
 	// .rs-footer__scroll
 	&__scroll {
-		position: absolute; /* Абсолютное позиционирование кнопки относительно родительского блока */
-		top: 0; /* Позиционирование кнопки по вертикали на середину родительского блока */
-		right: 0; /* Прижатие кнопки к левому краю родительского блока */
-		transform: rotate(-90deg) translateX(23%); /* Поворот кнопки на 90 градусов и сдвиг её для коррекции положения */
-		transform-origin: right bottom; /* Точка преобразования - левый верхний угол кнопки */
+		position: absolute;
+		z-index: 10;
+		top: 0;
+		right: 0;
+		transform: rotate(-90deg) translateX(27%) translateZ(0);
+		transform-origin: right bottom;
+		background-color: #fff;
+		padding: 10px 0px 0px 10px;
+		margin: -1px;
+		border-radius: 20px 0px 0px 0px;
 
-		@media (max-width: 1169.98px) {
-			display: none;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg style='fill: %23fff;' version='1.1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 20.5 20.5 ' xml:space='preserve'%3e%3cpath d='M20 0v0c-11.04 0-20 8.96-20 20H0V0h20.76z'%3e%3c/path%3e%3c/svg%3e");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 20px;
+			height: 20px;
+			margin: -1px;
+			transform: rotate(180deg) translateZ(0);
+		}
+
+		&::before {
+			bottom: 0;
+			right: 100%;
+		}
+
+		&::after {
+			bottom: 100%;
+			right: 0;
 		}
 
 		.rs-btn {

@@ -30,6 +30,7 @@
 				td {
 					border-right: 1px solid #d6dbe0;
 					border-bottom: 1px solid #d6dbe0;
+					background-color: #fff;
 					padding: 15px 20px;
 					font-weight: 400;
 					font-size: 18px;
@@ -75,6 +76,12 @@
 						&:last-child {
 							border-radius: 0px 0px 10px 0px;
 						}
+					}
+				}
+
+				&:nth-child(even) {
+					td {
+						background-color: #f5f5f5;
 					}
 				}
 			}

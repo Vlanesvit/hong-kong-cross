@@ -20,6 +20,7 @@
 .rs-table__block table tr td {
   border-right: 1px solid #d6dbe0;
   border-bottom: 1px solid #d6dbe0;
+  background-color: #fff;
   padding: 15px 20px;
   font-weight: 400;
   font-size: 18px;
@@ -55,6 +56,9 @@
 }
 .rs-table__block table tr:last-child td:last-child {
   border-radius: 0px 0px 10px 0px;
+}
+.rs-table__block table tr:nth-child(even) td {
+  background-color: #f5f5f5;
 }
 .rs-table__blockquote {
   margin-top: 28px;

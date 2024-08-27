@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=, initial-scale=1.0" />
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
+	<script src="https://api-maps.yandex.ru/2.1?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
 	<link rel="stylesheet" href="lib/aos/aos.css">
 	<link rel="stylesheet" href="css/rs-style.css" />
 	<title>Hong Kong Cross - PCB Assembly</title>
@@ -175,8 +176,8 @@
 				<div class="rs-banner__container">
 					<div class="rs-banner__content">
 						<div class="rs-banner__body">
-							<div class="rs-banner__desc">
-								<h1>PCB Manufacturer</h1>
+							<div class="rs-banner__desc" data-aos="fade" data-aos-delay="300">
+								<h1>PCB Assembly</h1>
 
 								<div class="rs-breadcrumbs">
 									<div class="rs-breadcrumbs__block">
@@ -234,12 +235,18 @@
 						</div>
 
 						<div class="rs-text-block__item" data-aos="fade-up" data-aos-delay="100">
-							<h2>Printed circuit boards assembly process</h2>
+							<div class="rs-text-block__title">
+								<h2>Printed circuit boards <br> assembly process</h2>
+							</div>
 						</div>
 						<div class="rs-text-block__item" data-aos="fade-up" data-aos-delay="200">
-							<p>Modern technological equipment and a professional team of employees allows us to perform
-								a full cycle of work on PCB assembly with high productivity and quality in our factory
-								in China.</p>
+							<div class="rs-text-block__text">
+								<p>Modern technological equipment and a professional team of employees allows us to
+									perform
+									a full cycle of work on PCB assembly with high productivity and quality in our
+									factory
+									in China.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -279,7 +286,7 @@
 			</section>
 
 			<link rel="stylesheet" href="css/rs-media-block.css">
-			<section class="rs-media-block">
+			<section class="rs-media-block" id="scroll-2">
 				<div class="rs-media-block__container">
 					<div class="rs-media-block__wrapper">
 						<div class="rs-media-block__title" data-aos="fade-up" data-aos-delay="100">
@@ -336,11 +343,12 @@
 											<div class="rs-media-block__slide swiper-slide">
 												<div class="rs-media-block__item">
 													<div class="rs-media-block__desc">
-														<h4>Single Sided PCB</h4>
-														<p>Single Sided PCB, also known as a Single Layer PCB, is a type
-															of PCB that comes with only one layer of conducting material
-															on one side of the board, and the other is used for mounting
-															electronic components.
+														<h4>Automatic assembly of SMD components</h4>
+														<p>A surface-mount device or SMD is an electronic device for
+															which the components are mounted or placed directly onto the
+															surface of the PCB. Surface-mount technology, or SMT, is the
+															name of the method used for producing an SMD. Automatic and
+															manual assembly of DIP components.
 														</p>
 													</div>
 													<div class="rs-media-block__img">
@@ -353,12 +361,13 @@
 											<div class="rs-media-block__slide swiper-slide">
 												<div class="rs-media-block__item">
 													<div class="rs-media-block__desc">
-														<h4>Single Sided PCB</h4>
-														<p>Single Sided PCB, also known as a Single Layer PCB, is a type
-															of PCB that comes with only one layer of conducting material
-															on one side of the board, and the other is used for mounting
-															electronic components.
-														</p>
+														<h4>Automatic and manual assembly of DIP components</h4>
+														<p>DIP is known to contribute to cost reduction, improved
+															accuracy, and increased productivity. It facilitates easier
+															and faster assembly and inspection throughout the entire
+															PCBA process. DIP assembly entails the mass production of
+															solder connections by immersing a PCB with mounted
+															components into a tin pot.</p>
 													</div>
 													<div class="rs-media-block__img">
 														<img src="./img/blocks/media-block/media-block-img-12.jpg"
@@ -370,12 +379,9 @@
 											<div class="rs-media-block__slide swiper-slide">
 												<div class="rs-media-block__item">
 													<div class="rs-media-block__desc">
-														<h4>Single Sided PCB</h4>
-														<p>Single Sided PCB, also known as a Single Layer PCB, is a type
-															of PCB that comes with only one layer of conducting material
-															on one side of the board, and the other is used for mounting
-															electronic components.
-														</p>
+														<h4>Assembly control by optical control means</h4>
+														<p>Automatic optical search and localization of component
+															installation defects and solder joints.</p>
 													</div>
 													<div class="rs-media-block__img">
 														<img src="./img/blocks/media-block/media-block-img-13.jpg"
@@ -387,12 +393,13 @@
 											<div class="rs-media-block__slide swiper-slide">
 												<div class="rs-media-block__item">
 													<div class="rs-media-block__desc">
-														<h4>Single Sided PCB</h4>
-														<p>Single Sided PCB, also known as a Single Layer PCB, is a type
-															of PCB that comes with only one layer of conducting material
-															on one side of the board, and the other is used for mounting
-															electronic components.
-														</p>
+														<h4>Assembly quality control on X-ray machine</h4>
+														<p>Produced on an X-ray inspection unit with a nanofocus tube
+															and tomography function. This type of control allows you to
+															diagnose voids in solder joints, hidden defects, which is
+															especially important when installing microcircuits in BGA
+															packages, as well as defects in printed circuit boards,
+															electronic components, and solder joints.</p>
 													</div>
 													<div class="rs-media-block__img">
 														<img src="./img/blocks/media-block/media-block-img-14.jpg"
@@ -456,9 +463,9 @@
 							<h2>When PCB assembly in process, the following operations are possible:</h2>
 
 							<ul>
-								<li>Internal testing and functional control</li>
-								<li>Mechanical assembly of items into the device housing</li>
-								<li>Climate tests</li>
+								<li>Internal testing and functional control.</li>
+								<li>Mechanical assembly of items into the device housing.</li>
+								<li>Climate tests.</li>
 							</ul>
 
 							<p>Before sending to the customer PCB are always packed in antistatic packages.</p>
@@ -470,21 +477,28 @@
 			<link rel="stylesheet" href="css/rs-text-block.css">
 			<section class="rs-text-block">
 				<div class="rs-text-block__container">
-					<h2>Electronic components supply for the PCB installation and assembly</h2>
+					<h2 data-aos="fade" data-aos-delay="100">Electronic components supply for <br> the PCB installation
+						and
+						assembly</h2>
 
 					<div class="rs-text-block__wrapper">
 						<div class="rs-text-block__item" data-aos="fade-up" data-aos-delay="100">
-							<p>PCB manufacturing in China has long been in high demand. Hong Kong Cross Ocean Technology
-								Ltd purchases components for industrial production by itself. The company cooperates
-								with the largest global distributors, as well as with distributors inside and outside
-								China, as well as directly with chip manufacturers.
-							</p>
-							<p>The list of component manufacturers is constantly updated, which makes it possible to
-								purchase components in the shortest time and at favorable prices and conditions for
-								customers.
-							</p>
-							<p>Thanks to many years of experience, the company’s employees promptly solve the issues of
-								replacing outdated components with modern analogues.</p>
+							<div class="rs-text-block__text">
+								<p>PCB manufacturing in China has long been in high demand. Hong Kong Cross Ocean
+									Technology
+									Ltd purchases components for industrial production by itself. The company cooperates
+									with the largest global distributors, as well as with distributors inside and
+									outside
+									China, as well as directly with chip manufacturers.
+								</p>
+								<p>The list of component manufacturers is constantly updated, which makes it possible to
+									purchase components in the shortest time and at favorable prices and conditions for
+									customers.
+								</p>
+								<p>Thanks to many years of experience, the company’s employees promptly solve the issues
+									of
+									replacing outdated components with modern analogues.</p>
+							</div>
 						</div>
 						<div class="rs-text-block__item" data-aos="fade-up" data-aos-delay="200">
 							<div class="rs-text-block__blockquote">
@@ -520,7 +534,7 @@
 			</script>
 			<section class="rs-contact">
 				<div class="rs-contact__container">
-					<h2>For more detailed information <br> please contact us
+					<h2 data-aos="fade" data-aos-delay="100">For more detailed information <br> please contact us
 					</h2>
 
 					<div class="rs-contact__wrapper">

@@ -210,6 +210,12 @@ section {
   }
 }
 
+@media (max-width: 991.98px) {
+  br {
+    display: none;
+  }
+}
+
 h1 {
   font-weight: 500;
   font-size: 55px;

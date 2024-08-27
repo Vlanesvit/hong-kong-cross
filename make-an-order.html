@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=, initial-scale=1.0" />
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
+	<script src="https://api-maps.yandex.ru/2.1?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
 	<link rel="stylesheet" href="lib/aos/aos.css">
 	<link rel="stylesheet" href="css/rs-style.css" />
 	<title>Hong Kong Cross - Make an order</title>
@@ -175,7 +176,7 @@
 				<div class="rs-banner__container">
 					<div class="rs-banner__content">
 						<div class="rs-banner__body">
-							<div class="rs-banner__desc">
+							<div class="rs-banner__desc" data-aos="fade" data-aos-delay="300">
 								<h1>Make an order</h1>
 
 								<div class="rs-breadcrumbs">
@@ -234,15 +235,21 @@
 						</div>
 
 						<div class="rs-text-block__item" data-aos="fade-up" data-aos-delay="100">
-							<h2>How to make an order?</h2>
+							<div class="rs-text-block__title">
+								<h2>How to make an order?</h2>
+							</div>
 						</div>
 						<div class="rs-text-block__item" data-aos="fade-up" data-aos-delay="200">
-							<p>If you would like to know PCB manufacture in China and PCB assembly in China estimated
-								cost, or for placing an order for PCB production, an order for PCB manufacture and
-								assembly, you should to send us the files with PCB wiring and accompanying documentation
-								for assembly by e-mail
-								<a href="mailto:info@hkcrossocean.com.">info@hkcrossocean.com.</a>
-							</p>
+							<div class="rs-text-block__text">
+								<p>If you would like to know PCB manufacture in China and PCB assembly in China
+									estimated
+									cost, or for placing an order for PCB production, an order for PCB manufacture and
+									assembly, you should to send us the files with PCB wiring and accompanying
+									documentation
+									for assembly by e-mail
+									<a href="mailto:info@hkcrossocean.com.">info@hkcrossocean.com.</a>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -303,10 +310,10 @@
 							<h2>For PCB manufacture and PCB assembly:</h2>
 
 							<ul>
-								<li>PCB wiring files in GERBER RS274X format</li>
-								<li>Component coordinate table (PNP file)</li>
-								<li>Specification for the printed circuit board</li>
-								<li>Order form</li>
+								<li>PCB wiring files in GERBER RS274X format.</li>
+								<li>Component coordinate table (PNP file).</li>
+								<li>Specification for the printed circuit board.</li>
+								<li>Order form.</li>
 							</ul>
 
 							<p>We will respond to your request as soon as possible</p>
@@ -608,7 +615,7 @@
 			</script>
 			<section class="rs-contact">
 				<div class="rs-contact__container">
-					<h2>For more detailed information <br> please contact us
+					<h2 data-aos="fade" data-aos-delay="100">For more detailed information <br> please contact us
 					</h2>
 
 					<div class="rs-contact__wrapper">
